@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Assignment 1: Computer Graphic
+</title>
+</head>
+
+<body style="background-color:brown">
+<center>
+<form>
+<input type="button" value="line" id="line"/>
+<input type="button" value="circle" id="circle"/>
+<input type="button" value="ellipse" id="ellipse"/>
+<input type="button" value="rectangle" id="rectangle"/>
+<input type="button" value="polygon" id="polyg"/>
+<input type="button" value="polyline" id="polyl"/>
+<input type="button" value="clear" id="clear" style="background-color:pink">
+</form>
+</center>
+<center>
+<font color="white">
+Instruction: <br/>
+1.Click on one of the buttons to choose what you are going to draw;<br/>
+2.Click on different postions on the canvas;<br/>
+3.Clear the canvas with "clear" button.<br/>
+</font>
+<font color="white">
+How many vertices in the polygon? ----  
+"5"<input type="radio" name="auto_renew" value="5" id="auto_renew_5" onclick="setVertice()"/>
+"6"<input type="radio" name="auto_renew" value="6" id="auto_renew_6" onclick="setVertice()"/><br/>
+</font>
+</center>
+<br/>
+<center>
+<canvas id="canvas" width="500" height="500"
+style="border:3px solid #d3d3d3; background-color:white;">
+Your browser does not support the canvas element.
+</canvas>
+</center>
+<script src="midpoint.js"></script>
+
+</body>
+</html>
